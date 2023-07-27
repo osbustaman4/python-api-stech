@@ -1,7 +1,7 @@
-from app_config import config as conf
+from app_config import configure
 from src import init_app
 
-configuration = conf['development']
+configuration = configure['development']
 app = init_app(configuration)
 
 if __name__ == '__main__':
