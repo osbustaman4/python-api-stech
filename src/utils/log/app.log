@@ -1,0 +1,56 @@
+2023-07-25 18:28:52 | ERROR | 'ObjectData' object has no attribute 'to_json'
+2023-07-25 18:28:52 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/demoApiV1/src/services/ObjectDataServices.py", line 22, in get_data
+    objectsData.append(objectData.to_json())
+AttributeError: 'ObjectData' object has no attribute 'to_json'
+
+2023-07-25 18:56:21 | ERROR | No module named 'xlsxwriter'
+2023-07-25 18:56:21 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/demoApiV1/src/routes/ObjectDataRoutes.py", line 38, in getObjectData
+    writer = pd.ExcelWriter(f'{filename_excel}', engine='xlsxwriter')
+  File "/var/www/html/demoApiV1/env/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 192, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+
+2023-07-25 18:59:28 | ERROR | 'XlsxWriter' object has no attribute 'save'
+2023-07-25 18:59:28 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/demoApiV1/src/routes/ObjectDataRoutes.py", line 47, in getObjectData
+    writer.save()
+AttributeError: 'XlsxWriter' object has no attribute 'save'
+
+2023-07-25 19:37:56 | ERROR | 'XlsxWriter' object has no attribute 'save'
+2023-07-25 19:37:56 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/demoApiV1/src/routes/ObjectDataRoutes.py", line 54, in getObjectData
+    writer.save()
+AttributeError: 'XlsxWriter' object has no attribute 'save'
+
+2023-07-25 19:47:29 | ERROR | File is not a zip file
+2023-07-25 19:47:29 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/demoApiV1/src/routes/ObjectDataRoutes.py", line 57, in getObjectData
+    workbook = openpyxl.load_workbook(filename=filename_excel)
+  File "/var/www/html/demoApiV1/env/lib/python3.10/site-packages/openpyxl/reader/excel.py", line 344, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/var/www/html/demoApiV1/env/lib/python3.10/site-packages/openpyxl/reader/excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "/var/www/html/demoApiV1/env/lib/python3.10/site-packages/openpyxl/reader/excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.10/zipfile.py", line 1267, in __init__
+    self._RealGetContents()
+  File "/usr/lib/python3.10/zipfile.py", line 1334, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2023-07-25 19:52:19 | ERROR | 'DataFrame' object has no attribute 'append'
+2023-07-25 19:52:19 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/demoApiV1/src/routes/ObjectDataRoutes.py", line 41, in getObjectData
+    dfHeadData = dfHeadData.append({
+  File "/var/www/html/demoApiV1/env/lib/python3.10/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+
+2023-07-25 20:04:15 | ERROR | 'dict' object has no attribute 'dt_server'
+2023-07-25 20:04:15 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/demoApiV1/src/routes/ObjectDataRoutes.py", line 64, in getObjectData
+    sheetData[f'A{cont}'] = element.dt_server
+AttributeError: 'dict' object has no attribute 'dt_server'
+
