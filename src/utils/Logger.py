@@ -27,9 +27,9 @@ class Logger():
         return logger
 
     @classmethod
-    def add_to_log(cls, level, message):
+    def add_to_log(self, level, message):
         try:
-            logger = cls.__set_logger(cls)
+            logger = self.__set_logger(self)
 
             if (level == "critical"):
                 logger.critical(message)
