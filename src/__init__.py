@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_swagger_ui import get_swaggerui_blueprint
 
-from src.routes import ObjectDataRoutes
+from src.routes import ObjectDataRoutes, NotificationRoutes
 
 app = Flask(__name__)
 
@@ -26,5 +26,8 @@ def init_app(config):
     app.register_blueprint(ObjectDataRoutes.main_get_data, url_prefix='/')
     app.register_blueprint(ObjectDataRoutes.main_getObjectData, url_prefix='/object-data/base64')
     app.register_blueprint(ObjectDataRoutes.main_getObjectDataJson, url_prefix='/object-data/json')
+
+
+    app.register_blueprint(NotificationRoutes.main_notiSelec, url_prefix='/noti_selec')
 
     return app
