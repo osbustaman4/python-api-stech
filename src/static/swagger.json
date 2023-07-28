@@ -61,59 +61,119 @@
         }
     },
 
+
     "paths": {
-        "/object-data/base64": {
-            "post": {
+        "/object-data/base64/": {
+            "__comentario__": "COMENTARIO: Cuerpo para descrbir un endpoint",
+            "get": {
                 "tags": [
                     "obtiene un reporte de excel en base64"
                 ],
-                "summary": "Add todo",
-                "requestBody": {
-                    "description": "Post New todo To Database",
-                    "required": true,
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "#/components/schemas/TodoList"
-                            }
-                        }
-                    }	
-                },
+                "parameters": [],
+                "summary": "",
                 "responses": {
                     "200": {
-                        "description": "OK",
-                        "schema": {
-                            "$ref": "#/components/schemas/TodoList"
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "base64_encoded_file": {
+                                            "type": "string",
+                                            "description": "Excel en formato base64"
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "description": "Indica si la solicitud fue exitosa"
+                                        }
+                                    },
+                                    "example": {
+                                        "base64_encoded_file": "datos_del_excel_en_base64",
+                                        "success": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "404": {
                         "description": "NOT FOUND",
-                        "schema": {
-                            "$ref": "#/components/schemas/TodoList"
-                        }
-                    }
-                },
-                "get" :{
-                    "tags": [
-                        "Get All todos from API"
-                    ],
-                    "summary": "Get All todos",
-                    "responses": {
-                        "200": {
-                            "description": "OK",
-                            "schema": {
-                                "$ref": "#/components/schemas/TodoList"
-                            }
-                        },
-                        "404": {
-                            "description": "NOT FOUND",
-                            "schema": {
-                                "$ref": "#/components/schemas/TodoList"
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Mensaje que indica que el recurso no fue encontrado"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Recurso no encontrado"
+                                    }
+                                }
                             }
                         }
                     }
                 }
+            }
+        },
 
+
+
+        "/object-data/json/": {
+            "__comentario__": "COMENTARIO: Cuerpo para descrbir un endpoint",
+            "get": {
+                "tags": [
+                    "se obtienen los json"
+                ],
+                "parameters": [],
+                "summary": "",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "base64_encoded_file": {
+                                            "type": "string",
+                                            "description": "Excel en formato base64"
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "description": "Indica si la solicitud fue exitosa"
+                                        }
+                                    },
+                                    "example": {
+                                        "base64_encoded_file": "datos_del_excel_en_base64",
+                                        "success": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Mensaje que indica que el recurso no fue encontrado"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Recurso no encontrado"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
