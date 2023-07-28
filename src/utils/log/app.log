@@ -54,3 +54,27 @@ AttributeError: 'DataFrame' object has no attribute 'append'
     sheetData[f'A{cont}'] = element.dt_server
 AttributeError: 'dict' object has no attribute 'dt_server'
 
+2023-07-28 15:53:04 | ERROR | No module named 'xlsxwriter'
+2023-07-28 15:53:04 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/python-api-stech/src/routes/ObjectDataRoutes.py", line 54, in getObjectData
+    writer = pd.ExcelWriter(f'{filename_excel}', engine='xlsxwriter')
+  File "/var/www/html/python-api-stech/env/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 192, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+
+2023-07-28 15:53:18 | ERROR | No module named 'xlsxwriter'
+2023-07-28 15:53:18 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/python-api-stech/src/routes/ObjectDataRoutes.py", line 54, in getObjectData
+    writer = pd.ExcelWriter(f'{filename_excel}', engine='xlsxwriter')
+  File "/var/www/html/python-api-stech/env/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 192, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+
+2023-07-28 15:53:41 | ERROR | No module named 'xlsxwriter'
+2023-07-28 15:53:41 | ERROR | Traceback (most recent call last):
+  File "/var/www/html/python-api-stech/src/routes/ObjectDataRoutes.py", line 54, in getObjectData
+    writer = pd.ExcelWriter(f'{filename_excel}', engine='xlsxwriter')
+  File "/var/www/html/python-api-stech/env/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 192, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+
