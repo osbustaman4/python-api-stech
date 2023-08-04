@@ -158,3 +158,1354 @@ werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not at
     raise UnsupportedMediaType(
 werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
 
+2023-07-31 09:22:39 | ERROR | (0, '')
+2023-07-31 09:22:39 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 17, in getAllNotificationUser
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 09:40:02 | ERROR | (0, '')
+2023-07-31 09:40:02 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 17, in getAllNotificationUser
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 09:40:17 | ERROR | (0, '')
+2023-07-31 09:40:17 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 17, in getAllNotificationUser
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 09:44:08 | ERROR | (0, '')
+2023-07-31 09:44:09 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 17, in getAllNotificationUser
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 09:44:24 | ERROR | (0, '')
+2023-07-31 09:44:24 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 17, in getAllNotificationUser
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 09:44:37 | ERROR | (0, '')
+2023-07-31 09:44:37 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 17, in getAllNotificationUser
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 09:45:38 | ERROR | (0, '')
+2023-07-31 09:45:38 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 17, in getAllNotificationUser
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 10:30:48 | ERROR | 'id_usuario'
+2023-07-31 10:30:48 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 35, in notiRead
+    result = NotificationService.uploadNotiRead(data['id_usuario'])
+                                                ~~~~^^^^^^^^^^^^^^
+KeyError: 'id_usuario'
+
+2023-07-31 10:31:44 | ERROR | 'id_usuario'
+2023-07-31 10:31:44 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 35, in notiRead
+    result = NotificationService.uploadNotiRead(data['id'])
+                                                ^^^^^^^^^^^^
+KeyError: 'id_usuario'
+
+2023-07-31 10:38:08 | ERROR | 'id_usuario'
+2023-07-31 10:38:08 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 35, in notiRead
+    result = NotificationService.uploadNotiRead(data['id_usuario'])
+                                                ~~~~^^^^^^^^^^^^^^
+KeyError: 'id_usuario'
+
+2023-07-31 12:34:31 | ERROR | tuple index out of range
+2023-07-31 12:34:31 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 31, in carHistory
+    , int(row[1])
+          ~~~^^^
+IndexError: tuple index out of range
+
+2023-07-31 12:37:51 | ERROR | (0, '')
+2023-07-31 12:37:53 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 21, in carHistory
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 12:41:04 | ERROR | 'tuple' object is not callable
+2023-07-31 12:41:04 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 27, in carHistory
+    resulset = cursor._rows()
+               ^^^^^^^^^^^^^^
+TypeError: 'tuple' object is not callable
+
+2023-07-31 12:43:30 | ERROR | 'module' object is not callable
+2023-07-31 12:43:30 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 29, in carHistory
+    objectData = GsUserObjects(
+                 ^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+2023-07-31 14:01:25 | ERROR | (0, '')
+2023-07-31 14:01:25 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 21, in carHistory
+    with self.CONNECTION.cursor() as cursor:
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 14:15:02 | ERROR | HTTP 404 - Not Found
+2023-07-31 14:15:02 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 28, in carHistory
+    raise HTTP404Error()
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - Not Found
+
+2023-07-31 14:20:42 | ERROR | (0, '')
+2023-07-31 14:20:42 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 65, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:09:03 | ERROR | 'id_usuario'
+2023-07-31 15:09:03 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 60, in gsUserOjects
+    user = data['id_usuario']
+           ~~~~^^^^^^^^^^^^^^
+KeyError: 'id_usuario'
+
+2023-07-31 15:49:17 | ERROR | (0, '')
+2023-07-31 15:49:17 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 65, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:50:16 | ERROR | (0, '')
+2023-07-31 15:50:16 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 65, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:50:38 | ERROR | (0, '')
+2023-07-31 15:50:38 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 65, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:51:34 | ERROR | 'id_usuario'
+2023-07-31 15:51:34 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 60, in gsUserOjects
+    user = data['id_usuario']
+           ~~~~^^^^^^^^^^^^^^
+KeyError: 'id_usuario'
+
+2023-07-31 15:52:22 | ERROR | (0, '')
+2023-07-31 15:52:22 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 65, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:52:41 | ERROR | (0, '')
+2023-07-31 15:52:41 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:52:47 | ERROR | (0, '')
+2023-07-31 15:52:47 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 65, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:52:59 | ERROR | (0, '')
+2023-07-31 15:52:59 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 65, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:53:56 | ERROR | (0, '')
+2023-07-31 15:53:58 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 15:56:34 | ERROR | (0, '')
+2023-07-31 15:56:34 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:19:31 | ERROR | (0, '')
+2023-07-31 16:19:31 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 67, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:28:59 | ERROR | (0, '')
+2023-07-31 16:28:59 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 67, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:32:29 | ERROR | (0, '')
+2023-07-31 16:32:29 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 67, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:35:32 | ERROR | (0, '')
+2023-07-31 16:35:32 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:37:49 | ERROR | (0, '')
+2023-07-31 16:37:49 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 40, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:44:35 | ERROR | (0, '')
+2023-07-31 16:44:35 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 40, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:48:45 | ERROR | (0, '')
+2023-07-31 16:48:45 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 40, in gsObjectDataImei
+    cursor.execute(query, (imei, dt, f"{dt} 23:59:59"))
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:50:46 | ERROR | (0, '')
+2023-07-31 16:50:46 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:51:50 | ERROR | (0, '')
+2023-07-31 16:51:50 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:52:28 | ERROR | (0, '')
+2023-07-31 16:52:28 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-07-31 16:52:51 | ERROR | (0, '')
+2023-07-31 16:52:51 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 61, in gsUserOjects
+    SELECT *
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:02:01 | ERROR | (0, '')
+2023-08-01 09:02:01 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 37, in carHistory
+    queryhist = NotificationService.gsObjectDataImei(dataToConsult)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in gsObjectDataImei
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:07:18 | ERROR | (0, '')
+2023-08-01 09:07:18 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in gsObjectDataImei
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:07:38 | ERROR | (0, '')
+2023-08-01 09:07:38 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 58, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:11:10 | ERROR | (0, '')
+2023-08-01 09:11:10 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in gsObjectDataImei
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:11:31 | ERROR | (0, '')
+2023-08-01 09:11:31 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 58, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:13:55 | ERROR | (0, '')
+2023-08-01 09:13:55 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in gsObjectDataImei
+    cursor.execute(f"""SELECT
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:14:01 | ERROR | (0, '')
+2023-08-01 09:14:01 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 58, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:31:18 | ERROR | float() argument must be a string or a real number, not 'datetime.datetime'
+2023-08-01 09:31:18 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 32, in gsObjectDataImei
+    , float(row[1])
+      ^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'datetime.datetime'
+
+2023-08-01 09:32:10 | ERROR | float() argument must be a string or a real number, not 'datetime.datetime'
+2023-08-01 09:32:10 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 32, in gsObjectDataImei
+    , float(row[1])
+      ^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'datetime.datetime'
+
+2023-08-01 09:41:16 | ERROR | float() argument must be a string or a real number, not 'datetime.datetime'
+2023-08-01 09:41:16 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 32, in gsObjectDataImei
+    , float(row[1])
+      ^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'datetime.datetime'
+
+2023-08-01 09:44:59 | ERROR | (0, '')
+2023-08-01 09:44:59 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 66, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:45:01 | ERROR | (0, '')
+2023-08-01 09:45:01 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 66, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:45:02 | ERROR | (0, '')
+2023-08-01 09:45:02 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 66, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:45:03 | ERROR | (0, '')
+2023-08-01 09:45:03 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 66, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-01 09:45:04 | ERROR | (0, '')
+2023-08-01 09:45:04 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 66, in gsUserOjects
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-02 09:51:24 | ERROR | DtTracker.__init__() takes 8 positional arguments but 19 were given
+2023-08-02 09:51:24 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 75, in carSelect
+    objectData = DtTracker(
+                 ^^^^^^^^^^
+TypeError: DtTracker.__init__() takes 8 positional arguments but 19 were given
+
+2023-08-02 09:57:17 | ERROR | DtTracker.__init__() takes 8 positional arguments but 19 were given
+2023-08-02 09:57:17 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 75, in carSelect
+    objectData = DtTracker(
+                 ^^^^^^^^^^
+TypeError: DtTracker.__init__() takes 8 positional arguments but 19 were given
+
+2023-08-02 09:57:48 | ERROR | DtTracker.__init__() takes 8 positional arguments but 19 were given
+2023-08-02 09:57:48 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 75, in carSelect
+    objectData = DtTracker(
+                 ^^^^^^^^^^
+TypeError: DtTracker.__init__() takes 8 positional arguments but 19 were given
+
+2023-08-02 09:58:40 | ERROR | DtTracker.__init__() takes 8 positional arguments but 19 were given
+2023-08-02 09:58:40 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 75, in carSelect
+    objectData = DtTracker(
+                 ^^^^^^^^^^
+TypeError: DtTracker.__init__() takes 8 positional arguments but 19 were given
+
+2023-08-02 10:31:00 | ERROR | (0, '')
+2023-08-02 10:31:00 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in carSelect
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-02 10:32:18 | ERROR | (0, '')
+2023-08-02 10:32:18 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in carSelect
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-02 10:55:38 | ERROR | (1054, "Unknown column 'abrir_puertas' in 'field list'")
+2023-08-02 10:55:39 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 21, in motorCut
+    cursor.execute(f"""CALL  appv2_vehiculos_corte_motor({ imei }, { command })""")
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'abrir_puertas' in 'field list'")
+
+2023-08-02 11:14:03 | ERROR | (1054, "Unknown column 'abrir_puertas' in 'field list'")
+2023-08-02 11:14:13 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 21, in motorCut
+    command = data['comando']
+            ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'abrir_puertas' in 'field list'")
+
+2023-08-02 11:16:28 | ERROR | (1054, "Unknown column 'abrir_puertas' in 'field list'")
+2023-08-02 11:16:28 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in motorCut
+    resulset = cursor.execute(f"""CALL appv2_vehiculos_corte_motor({ imei }, { command })""")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'abrir_puertas' in 'field list'")
+
+2023-08-02 14:09:34 | ERROR | (1054, "Unknown column 'cerrar_puertas' in 'field list'")
+2023-08-02 14:09:34 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in motorCut
+    # resulset = cursor.execute(f"""CALL appv2_vehiculos_corte_motor({ imei }, { command })""")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'cerrar_puertas' in 'field list'")
+
+2023-08-02 14:13:47 | ERROR | (1054, "Unknown column 'cerrar_puertas' in 'field list'")
+2023-08-02 14:14:06 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 22, in motorCut
+    cursor.execute(f"""CALL appv2_vehiculos_corte_motor({ imei }, { command })""")
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'cerrar_puertas' in 'field list'")
+
+2023-08-03 09:10:24 | ERROR | (2006, "MySQL server has gone away (ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))")
+2023-08-03 09:10:24 | ERROR | Traceback (most recent call last):
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 25, in geoInsert
+    cursor.execute("CALL appv2_geocercas_insertar(%s, %s, %s, %s)", (user, imei, vertices, patent))
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 763, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))")
+
+2023-08-03 09:11:58 | ERROR | (0, '')
+2023-08-03 09:11:58 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 25, in geoInsert
+    cursor.execute("CALL appv2_geocercas_insertar(%s, %s, %s, %s)", (user, imei, vertices, patent))
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 797, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+2023-08-03 10:56:01 | ERROR | 0
+2023-08-03 10:56:01 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 35, in geoSelect
+    "detalle": objects[0][0],
+               ~~~~~~~~~~^^^
+KeyError: 0
+
+2023-08-03 11:06:47 | ERROR | (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'integer' at line 8")
+2023-08-03 11:06:47 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in geoSelect
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'integer' at line 8")
+
+2023-08-03 11:06:47 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 11:06:47 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 31, in geoSelect
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 11:23:42 | ERROR | (1054, "Unknown column '$1' in 'where clause'")
+2023-08-03 11:23:42 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 23, in geoDelete
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column '$1' in 'where clause'")
+
+2023-08-03 11:23:42 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 11:23:42 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 31, in geoDelete
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 12:16:37 | ERROR | (1054, "Unknown column 'tipo_user' in 'field list'")
+2023-08-03 12:16:37 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 25, in userSelect
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tipo_user' in 'field list'")
+
+2023-08-03 12:16:37 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 12:16:37 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 34, in userSelect
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 12:17:22 | ERROR | (1054, "Unknown column 'tipo_user' in 'field list'")
+2023-08-03 12:17:22 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 25, in userSelect
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tipo_user' in 'field list'")
+
+2023-08-03 12:17:22 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 12:17:22 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 34, in userSelect
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 12:34:03 | ERROR | (1054, "Unknown column 'activo' in 'field list'")
+2023-08-03 12:34:03 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 26, in userSelect
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'activo' in 'field list'")
+
+2023-08-03 12:34:03 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 12:34:03 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 34, in userSelect
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 12:35:36 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 12:35:36 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 34, in userSelect
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 12:37:04 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 12:37:04 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 34, in userSelect
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 12:37:22 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 12:37:22 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 34, in userSelect
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 12:48:26 | ERROR | string indices must be integers, not 'str'
+2023-08-03 12:48:26 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 46, in userSelect
+    "tipo_user": infoUser['tipo_user']['type'],
+                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2023-08-03 12:48:49 | ERROR | string indices must be integers, not 'str'
+2023-08-03 12:48:49 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 46, in userSelect
+    "tipo_user": infoUser['tipo_user']['type'],
+                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2023-08-03 12:49:38 | ERROR | string indices must be integers, not 'str'
+2023-08-03 12:49:38 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 46, in userSelect
+    "tipo_user": str(infoUser['tipo_user']['type']),
+                     ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2023-08-03 14:04:25 | ERROR | (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name': 'Dev_Stechssss', 'company': 'Informatica Stech Ltda', 'address': 'San Seb' at line 4")
+2023-08-03 14:04:25 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 26, in userUpdate
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name': 'Dev_Stechssss', 'company': 'Informatica Stech Ltda', 'address': 'San Seb' at line 4")
+
+2023-08-03 14:04:25 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 14:04:25 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 37, in userUpdate
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 14:06:10 | ERROR | (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name': 'Dev_Stechssss', 'company': 'Informatica Stech Ltda', 'address': 'San Seb' at line 4")
+2023-08-03 14:06:10 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 26, in userUpdate
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name': 'Dev_Stechssss', 'company': 'Informatica Stech Ltda', 'address': 'San Seb' at line 4")
+
+2023-08-03 14:06:10 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 14:06:10 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 37, in userUpdate
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 14:26:03 | ERROR | (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"name": "Dev_Stech", "company": "Informatica Stech Ltda", "address": "San Sebast\' at line 4')
+2023-08-03 14:26:05 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 27, in userUpdate
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 729, in _read_packet
+    packet.raise_for_error()
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"name": "Dev_Stech", "company": "Informatica Stech Ltda", "address": "San Sebast\' at line 4')
+
+2023-08-03 14:26:05 | ERROR | HTTP 404 - No se encontro dato para mostrar
+2023-08-03 14:26:05 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 37, in userUpdate
+    raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+src.models.error.HTTP404Error.HTTP404Error: HTTP 404 - No se encontro dato para mostrar
+
+2023-08-03 15:11:34 | ERROR | 'imei'
+2023-08-03 15:11:34 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 197, in motorCut
+    objects = NotificationService.motorCut(data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 193, in motorCut
+    imei = data['imei']
+           ~~~~^^^^^^^^
+KeyError: 'imei'
+
+2023-08-03 15:25:49 | ERROR | 'int' object is not subscriptable
+2023-08-03 15:25:49 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 42, in loginApp
+    objects = NotificationService.userSelect(int(userId))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 58, in userSelect
+    user = data['id_usuario']
+           ~~~~^^^^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable
+
+2023-08-03 15:26:36 | ERROR | string indices must be integers, not 'str'
+2023-08-03 15:26:36 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 42, in loginApp
+    objects = NotificationService.userSelect(userId)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 58, in userSelect
+    user = data['id_usuario']
+           ~~~~^^^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2023-08-03 15:28:27 | ERROR | Object of type set is not JSON serializable
+2023-08-03 15:28:27 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 55, in loginApp
+    return jsonify(response)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python3\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Python3\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Python3\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type set is not JSON serializable
+
+2023-08-03 15:29:36 | ERROR | Object of type set is not JSON serializable
+2023-08-03 15:29:36 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 55, in loginApp
+    return jsonify(response)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python3\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Python3\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Python3\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\flask\json\provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type set is not JSON serializable
+
+2023-08-03 15:32:33 | ERROR | list indices must be integers or slices, not str
+2023-08-03 15:32:33 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 47, in loginApp
+    "id": infoUser['id'],
+          ~~~~~~~~^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+2023-08-03 15:33:03 | ERROR | list indices must be integers or slices, not str
+2023-08-03 15:33:03 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 47, in loginApp
+    "id": infoUser['id'],
+          ~~~~~~~~^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+2023-08-03 15:33:21 | ERROR | list indices must be integers or slices, not str
+2023-08-03 15:33:21 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 47, in loginApp
+    "id": infoUser['id'],
+          ~~~~~~~~^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+2023-08-03 15:43:24 | ERROR | isinstance() arg 2 must be a type, a tuple of types, or a union
+2023-08-03 15:43:24 | ERROR | Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\routes\NotificationRoutes.py", line 40, in loginApp
+    infoUser = NotificationService.userSelect(int((objects[0][0]).split(" ")[1]))[0]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 58, in userSelect
+    if isinstance(data, 'dict'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+

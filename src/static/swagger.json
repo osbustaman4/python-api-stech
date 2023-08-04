@@ -12,8 +12,8 @@
 
     "tags": [
         {
-            "name": "APIs",
-            "description": "Testeo de APIs"
+            "name": "GPSimple APIs",
+            "description": ""
         }
     ],
 
@@ -61,165 +61,38 @@
         }
     },
 
-
     "paths": {
-        "/object-data/base64/": {
-            "__comentario__": "COMENTARIO: Cuerpo para descrbir un endpoint",
-            "get": {
-                "tags": [
-                    "APIs de test"
-                ],
-                "parameters": [],
-                "summary": "",
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "base64_encoded_file": {
-                                            "type": "string",
-                                            "description": "Excel en formato base64"
-                                        },
-                                        "success": {
-                                            "type": "boolean",
-                                            "description": "Indica si la solicitud fue exitosa"
-                                        }
-                                    },
-                                    "example": {
-                                        "base64_encoded_file": "datos_del_excel_en_base64",
-                                        "success": true
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "404": {
-                        "description": "NOT FOUND",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "message": {
-                                            "type": "string",
-                                            "description": "Mensaje que indica que el recurso no fue encontrado"
-                                        }
-                                    },
-                                    "example": {
-                                        "message": "Recurso no encontrado"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-
-
-
-        "/object-data/json/": {
-            "__comentario__": "COMENTARIO: Cuerpo para descrbir un endpoint",
-            "get": {
-                "tags": [
-                    ""
-                ],
-                "parameters": [],
-                "summary": "",
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "base64_encoded_file": {
-                                            "type": "string",
-                                            "description": "Excel en formato base64"
-                                        },
-                                        "success": {
-                                            "type": "boolean",
-                                            "description": "Indica si la solicitud fue exitosa"
-                                        }
-                                    },
-                                    "example": {
-                                        "base64_encoded_file": "datos_del_excel_en_base64",
-                                        "success": true
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "404": {
-                        "description": "NOT FOUND",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "message": {
-                                            "type": "string",
-                                            "description": "Mensaje que indica que el recurso no fue encontrado"
-                                        }
-                                    },
-                                    "example": {
-                                        "message": "Recurso no encontrado"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-
-
-
-
-
-
-
         "/noti_selec": {
             "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
             "post": {
-                "tags": [
-                    "se obtienen los json"
-                ],
-                "summary": "Se obtienen todas las notificaciones de un determinado usuario",
-                "parameters": [
-                    {
-                        "name": "id_usuario",
-                        "in": "header",
-                        "description": "ID del usuario",
-                        "required": true,
-                        "schema": {
-                            "type": "integer"
-                        }
-                    },
-                    {
-                        "name": "fecha",
-                        "in": "header",
-                        "description": "Fecha en formato 'YYYY-MM-DD'",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "date"
-                        }
-                    },
-                    {
-                        "name": "refrescar",
-                        "in": "header",
-                        "description": "Indica si se debe refrescar",
-                        "required": true,
-                        "schema": {
-                            "type": "boolean"
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /not_selec",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "id_usuario": {
+                                        "type": "integer",
+                                        "description": "ID del usuario"
+                                    },
+                                    "fecha": {
+                                        "type": "string",
+                                        "format": "date",
+                                        "description": "Fecha en formato 'YYYY-MM-DD'"
+                                    },
+                                    "refrescar": {
+                                        "type": "boolean",
+                                        "description": "Indica si se debe refrescar"
+                                    }
+                                }
+                            }
                         }
                     }
-                ],
+                },
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -236,24 +109,6 @@
                                             "type": "boolean",
                                             "description": "Indica si la solicitud fue exitosa"
                                         }
-                                    },
-                                    "example": {
-                                        "detalle": [
-                                            {
-                                                "contador_reenvios": 0,
-                                                "detalle": "Alerta estacionamiento seguro! Vehículo patente N° HHSG62",
-                                                "fecha_actualizada": "28/07/2023 10:06:51",
-                                                "fecha_generada": "28/07/2023 10:06:51",
-                                                "id": 262,
-                                                "id_usuario": 1,
-                                                "identificador_tipo": 20,
-                                                "imei_vehiculo": "864606042361328",
-                                                "leida": 0,
-                                                "oculta": 0,
-                                                "tipo": "CronNode"
-                                            }
-                                        ],
-                                        "mensaje": "notificaciones"
                                     }
                                 }
                             }
@@ -280,9 +135,1240 @@
                     }
                 }
             }
-        }
-        
-    }
+        },
 
-    
+        "/noti_read": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /noti_read",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "id_usuario": {
+                                        "type": "integer",
+                                        "description": "ID del usuario"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "202": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Notificaciones marcadas como leidas"
+                                        }
+                                    },
+                                    "example": {
+                                        "mensaje": "Notificaciones marcadas como leidas"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        },
+
+        "/car_history": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /car_history",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "id_usuario": {
+                                        "type": "integer",
+                                        "description": "ID del usuario"
+                                    },
+                                    "fecha": {
+                                        "type": "date",
+                                        "description": "Fecha del día a consultar"
+                                    },
+                                    "imei": {
+                                        "type": "integer",
+                                        "description": "ID del dispositivo"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Notificaciones marcadas como leidas"
+                                        }
+                                    },
+                                    "example": {
+                                        "mensaje": "Notificaciones marcadas como leidas"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        },
+
+        "/car_select": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /car_select",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "id_usuario": {
+                                        "type": "integer",
+                                        "description": "ID del usuario"
+                                    }
+                                },
+                                "example": {
+                                    "id_usuario": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Mensaje que indica la cantidad de vehículos encontrados"
+                                        },
+                                        "dispos": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "plate_number": {
+                                                        "type": "string"
+                                                    },
+                                                    "lat": {
+                                                        "type": "number"
+                                                    },
+                                                    "lng": {
+                                                        "type": "number"
+                                                    },
+                                                    "latLng": {
+                                                        "type": "string"
+                                                    },
+                                                    "speed": {
+                                                        "type": "number"
+                                                    },
+                                                    "imei": {
+                                                        "type": "string"
+                                                    },
+                                                    "angle": {
+                                                        "type": "integer"
+                                                    },
+                                                    "odometer": {
+                                                        "type": "number"
+                                                    },
+                                                    "active": {
+                                                        "type": "string"
+                                                    },
+                                                    "comando_corte": {
+                                                        "type": "string"
+                                                    },
+                                                    "protocol": {
+                                                        "type": "string"
+                                                    },
+                                                    "ip": {
+                                                        "type": "string"
+                                                    },
+                                                    "port": {
+                                                        "type": "string"
+                                                    },
+                                                    "params": {
+                                                        "type": "string"
+                                                    },
+                                                    "alertas": {
+                                                        "type": "integer"
+                                                    },
+                                                    "comandos": {
+                                                        "type": "integer"
+                                                    },
+                                                    "lastposi": {
+                                                        "type": "string"
+                                                    },
+                                                    "geocerca_imei": {
+                                                        "type": "string",
+                                                        "nullable": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/motor_cut": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /motor_cut",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "imei": {
+                                        "type": "string",
+                                        "description": "IMEI del dispositivo"
+                                    },
+                                    "comando": {
+                                        "type": "string",
+                                        "description": "Comando para manipulación de un vehiculo, ejemplo motor, abrir_puertas o cerrar_puertas"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mensaje": {
+                                            "type": "string",
+                                            "mensaje": "exito para sp"
+                                        },
+                                        "dispos": {
+                                            "type": "string",
+                                            "detalle": "exito comando, mensaje: abrir_puertas"
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "detalle": "True"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/geo_insert": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /geo_insert",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "usuario": {
+                                        "type": "string",
+                                        "description": "Identificador único del usuario"
+                                    },
+                                    "imei": {
+                                        "type": "string",
+                                        "description": "IMEI del vehículo"
+                                    },
+                                    "vertices": {
+                                        "type": "string",
+                                        "description": "Latitud y longitud del vehículo formato ejemplo '-33.419500, -70.604875'"
+                                    },
+                                    "patente": {
+                                        "type": "string",
+                                        "description": "Placa patente del vehículo"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/geo_select": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /geo_select",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "usuario": {
+                                        "type": "integer",
+                                        "description": "Identificador único del usuario"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "detalle": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "imei": {
+                                                        "type": "string"
+                                                    },
+                                                    "lat": {
+                                                        "type": "string"
+                                                    },
+                                                    "lng": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Mensaje que indica la información de las geocercas de usuario"
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "description": "Indica si la solicitud fue exitosa"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/geo_delete": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /geo_delete",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "id_usuario": {
+                                        "type": "integer",
+                                        "description": "Identificador único del usuario"
+                                    },
+                                    "imei": {
+                                        "type": "string",
+                                        "description": "Identificador del vehículo"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Mensaje que indica que la geocerca ha sido eliminada con éxito"
+                                        }
+                                    },
+                                    "example": {
+                                        "mensaje": "Geocerca Eliminada"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/question_select": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "get": {
+                "tags": [""],
+                "summary": "Resumen de la operación GET para /question_select",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "detalle": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer"
+                                                    },
+                                                    "pregunta": {
+                                                        "type": "string"
+                                                    },
+                                                    "detalle": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Indica que es un FAQ"
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "description": "Indica si la solicitud fue exitosa"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/user_select": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /user_select",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "id_usuario": {
+                                        "type": "integer",
+                                        "description": "Identificador único del usuario"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "description": "Identificador único del usuario"
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "description": "Correo electrónico del usuario"
+                                        },
+                                        "username": {
+                                            "type": "string",
+                                            "description": "Nombre de usuario"
+                                        },
+                                        "tipo_user": {
+                                            "type": "string",
+                                            "description": "Tipo de usuario"
+                                        },
+                                        "info": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string",
+                                                    "description": "Nombre del usuario"
+                                                },
+                                                "company": {
+                                                    "type": "string",
+                                                    "description": "Nombre de la empresa"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "description": "Dirección del usuario"
+                                                },
+                                                "post_code": {
+                                                    "type": "string",
+                                                    "description": "Código postal del usuario"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "description": "Ciudad del usuario"
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "description": "País del usuario"
+                                                },
+                                                "phone1": {
+                                                    "type": "string",
+                                                    "description": "Teléfono principal del usuario"
+                                                },
+                                                "phone2": {
+                                                    "type": "string",
+                                                    "description": "Teléfono secundario del usuario"
+                                                },
+                                                "email": {
+                                                    "type": "string",
+                                                    "description": "Correo electrónico del usuario"
+                                                }
+                                            }
+                                        },
+                                        "timezone": {
+                                            "type": "string",
+                                            "description": "Zona horaria del usuario"
+                                        },
+                                        "activo": {
+                                            "type": "string",
+                                            "description": "Indica si el usuario está activo"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/user_update": {
+            "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /user_update",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "usuario": {
+                                        "type": "integer",
+                                        "description": "Identificador único del usuario"
+                                    },
+                                    "email": {
+                                        "type": "string",
+                                        "description": "Correo electrónico del usuario"
+                                    },
+                                    "info": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string",
+                                                "description": "Nombre del usuario"
+                                            },
+                                            "company": {
+                                                "type": "string",
+                                                "description": "Nombre de la empresa"
+                                            },
+                                            "address": {
+                                                "type": "string",
+                                                "description": "Dirección del usuario"
+                                            },
+                                            "post_code": {
+                                                "type": "string",
+                                                "description": "Código postal del usuario"
+                                            },
+                                            "city": {
+                                                "type": "string",
+                                                "description": "Ciudad del usuario"
+                                            },
+                                            "country": {
+                                                "type": "string",
+                                                "description": "País del usuario"
+                                            },
+                                            "phone1": {
+                                                "type": "string",
+                                                "description": "Teléfono principal del usuario"
+                                            },
+                                            "phone2": {
+                                                "type": "string",
+                                                "description": "Teléfono secundario del usuario"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Mensaje que indica que la información ha sido actualizada"
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "description": "Indica si la solicitud fue exitosa"
+                                        }
+                                    },
+                                    "example": {
+                                        "mensaje": "información actualizada",
+                                        "success": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/login_app": {
+            "post": {
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /login_app",
+                "requestBody": {
+                    "description": "Datos del JSON en el cuerpo de la solicitud",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "description": "Correo electrónico del usuario"
+                                    },
+                                    "token": {
+                                        "type": "string",
+                                        "description": "Token de autenticación del usuario"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "description": "Contraseña del usuario"
+                                    },
+                                    "device": {
+                                        "type": "string",
+                                        "description": "Dispositivo del usuario"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer",
+                                            "description": "Identificador único del usuario"
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "description": "Correo electrónico del usuario"
+                                        },
+                                        "username": {
+                                            "type": "string",
+                                            "description": "Nombre de usuario"
+                                        },
+                                        "tipo_user": {
+                                            "type": "string",
+                                            "description": "Tipo de usuario"
+                                        },
+                                        "info": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string",
+                                                    "description": "Nombre del usuario"
+                                                },
+                                                "company": {
+                                                    "type": "string",
+                                                    "description": "Nombre de la empresa"
+                                                },
+                                                "address": {
+                                                    "type": "string",
+                                                    "description": "Dirección del usuario"
+                                                },
+                                                "post_code": {
+                                                    "type": "string",
+                                                    "description": "Código postal del usuario"
+                                                },
+                                                "city": {
+                                                    "type": "string",
+                                                    "description": "Ciudad del usuario"
+                                                },
+                                                "country": {
+                                                    "type": "string",
+                                                    "description": "País del usuario"
+                                                },
+                                                "phone1": {
+                                                    "type": "string",
+                                                    "description": "Teléfono principal del usuario"
+                                                },
+                                                "phone2": {
+                                                    "type": "string",
+                                                    "description": "Teléfono secundario del usuario"
+                                                },
+                                                "email": {
+                                                    "type": "string",
+                                                    "description": "Correo electrónico del usuario"
+                                                }
+                                            }
+                                        },
+                                        "timezone": {
+                                            "type": "string",
+                                            "description": "Zona horaria del usuario"
+                                        },
+                                        "activo": {
+                                            "type": "string",
+                                            "description": "Indica si el usuario está activo"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Error: NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Recurso no fue encontrado: El servidor no pudo encontrar el recurso solicitado por el cliente"
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Not Found",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error: INTERNAL SERVER ERROR",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Error interno del servidor: Esto significa que algo salió mal en el servidor al procesar la solicitud."
+                                        }
+                                    },
+                                    "example": {
+                                        "message": "Internal Server Error",
+                                        "success": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
