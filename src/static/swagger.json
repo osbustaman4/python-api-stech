@@ -62,11 +62,17 @@
     },
 
     "paths": {
+
         "/noti_selec": {
             "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
             "post": {
                 "tags": [""],
                 "summary": "Resumen de la operación POST para /not_selec",
+                "security": [
+                    {
+                        "OAuth2": []
+                    }
+                ],
                 "requestBody": {
                     "description": "Datos del JSON en el cuerpo de la solicitud",
                     "required": true,

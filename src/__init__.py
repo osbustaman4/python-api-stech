@@ -1,23 +1,11 @@
-from flask import Flask
-from flask_swagger_ui import get_swaggerui_blueprint
-
-from src.routes import ObjectDataRoutes, NotificationRoutes
+from flask import Flask, render_template, send_from_directory
+from flask_login import LoginManager
+from src.routes import AuthSwagger, ObjectDataRoutes, NotificationRoutes
 
 app = Flask(__name__)
 
-# swagger configs
-SWAGGER_URL = '/swagger'
-API_URL = '/static/swagger.json'
-SWAGGER_BLUEPRINT = get_swaggerui_blueprint(
-    SWAGGER_URL,
-    API_URL,
-    config={
-        'app_name' : "Todo Lista Endpoints"
-    }
-)
-
-app.register_blueprint(SWAGGER_BLUEPRINT, url_prefix = SWAGGER_URL)
-
+login_manager = LoginManager()
+login_manager.init_app(app)
 
 def init_app(config):
 
@@ -40,6 +28,20 @@ def init_app(config):
     app.register_blueprint(NotificationRoutes.main_userUpdate, url_prefix='/user_update')
     app.register_blueprint(NotificationRoutes.main_loginApp, url_prefix='/login_app')
 
+    app.register_blueprint(AuthSwagger.main_mainSwaggerOauth, url_prefix='/auth-swagger')
+    app.register_blueprint(AuthSwagger.swagger_blueprint, url_prefix='/swagger')
     
-
     return app
+
+
+@app.route('/')
+def index():
+    data = {
+        'mensaje': 'Hola mundo'
+    }
+    return render_template('login.html', data=data)
+
+
+@app.route('/static/assets/<path:filename>')
+def static_files(filename):
+    return send_from_directory('static', filename)

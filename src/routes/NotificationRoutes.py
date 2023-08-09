@@ -1,4 +1,3 @@
-
 import base64
 import datetime
 import json
@@ -316,5 +315,5 @@ def notiRead():
         Logger.add_to_log("error", str(ex))
         Logger.add_to_log("error", traceback.format_exc())
         response = jsonify({'message': "Internal Server Error",
-                           'success': False, "error": str(ex)})
+                            'success': False, "error": str(ex)})
         return response, 500
