@@ -19,11 +19,23 @@
 
     "servers": [
         {
-            "url": "/"
+            "url": "http://127.0.0.1:5000/swagger"
+        }
+    ],
+
+    "security": [
+        {
+            "BearerAuth": []
         }
     ],
 
     "components": {
+        "securitySchemes": {
+            "BearerAuth": {
+                "type": "http",
+                "scheme": "basic"
+            }
+        },
         "schemas": {
             "TodoList": {
                 "type": "object",
@@ -62,17 +74,46 @@
     },
 
     "paths": {
+        "/login": {
+            "get": {
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Operación exitosa"
+                    }
+                }
+            }
+        },
+
+        "/logout": {
+            "get": {
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Operación exitosa"
+                    }
+                }
+            }
+        },
 
         "/noti_selec": {
             "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
             "post": {
-                "tags": [""],
-                "summary": "Resumen de la operación POST para /not_selec",
                 "security": [
                     {
-                        "OAuth2": []
+                        "basicAuth": []
                     }
                 ],
+                "tags": [""],
+                "summary": "Resumen de la operación POST para /not_selec",
                 "requestBody": {
                     "description": "Datos del JSON en el cuerpo de la solicitud",
                     "required": true,

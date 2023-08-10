@@ -1,17 +1,16 @@
-import traceback
-from src.models.AuthUser.User import User
 
-from src.utils.Logger import Logger
+import traceback
 
 from src.database.db_mysql import get_connection
-from flask_swagger_ui import get_swaggerui_blueprint
+from src.utils.Logger import Logger
+from src.models.auth.Auth import Auth
 
-class AuthSwaggerServices():
-
+class AuthServices():
     CONNECTION = get_connection()
 
+
     @classmethod
-    def loginSwagger(self, data):
+    def loginUser(self, data):
 
         username = data['username']
         password = data['password']
@@ -22,7 +21,7 @@ class AuthSwaggerServices():
                 result = cursor._rows
 
                 if result:
-                    user = User(result[0][0], result[0][1], result[0][2])
+                    user = Auth(result[0][0], result[0][1], result[0][2])
                     return user
 
                 return False  # Si no se encuentra el usuario
@@ -34,14 +33,17 @@ class AuthSwaggerServices():
 
 
     @classmethod
-    def get_user_by_id(cls, user_id):
+    def getUserById(self, data):
+
+        user_id = data['user_id']
+
         try:
-            with cls.CONNECTION.cursor() as cursor:
+            with self.CONNECTION.cursor() as cursor:
                 cursor.execute(f"SELECT id, username, password  FROM gs_users WHERE id = {user_id}")
                 result = cursor._rows
 
                 if result:
-                    user = User(result[0][0], result[0][1], result[0][2])
+                    user = Auth(result[0][0], result[0][1], result[0][2])
                     return user
 
             return False  # Si no se encuentra el usuario
@@ -50,26 +52,3 @@ class AuthSwaggerServices():
             Logger.add_to_log("error", str(ex))
             Logger.add_to_log("error", traceback.format_exc())
             return None  # En caso de error
-
-
-    @classmethod
-    def initSwagger(self, initSwagger = False):
-
-        if initSwagger:
-            # swagger configs
-            SWAGGER_URL = '/swagger'
-            API_URL = '/static/swagger.json'
-
-            SWAGGER_BLUEPRINT = get_swaggerui_blueprint(
-                SWAGGER_URL,
-                API_URL,
-                config={
-                    'app_name' : "Todo Lista Endpoints"
-                }
-            )
-        
-        else:
-            SWAGGER_URL = '/swagger'
-            SWAGGER_BLUEPRINT = False
-
-        return SWAGGER_BLUEPRINT, SWAGGER_URL

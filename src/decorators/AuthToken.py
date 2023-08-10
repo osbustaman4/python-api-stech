@@ -11,7 +11,7 @@ import traceback
 def verify_token(func):
     @wraps(func)
     def decorador(*args, **kwargs):
-        secret = config('JWT_KEY')
+        secret = config('JWT_SECRET_KEY')
 
         try:
             if  'Authorization' in (request.headers).keys():
