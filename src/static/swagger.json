@@ -9,6 +9,11 @@
             "url": "https://opensource.org/licenses/MIT"
         }
     },
+    "contact": {
+        "name": "API Support",
+        "url": "https://www.example.com/support",
+        "email": "support@example.com"
+    },
 
     "tags": [
         {
@@ -19,19 +24,22 @@
 
     "servers": [
         {
-            "url": "http://127.0.0.1:5000/swagger"
+            "url": "http://127.0.0.1:5000"
+        },
+        {
+            "url": "http://139.144.171.68"
         }
     ],
 
     "security": [
         {
-            "BearerAuth": []
+            "basicAuth": []
         }
     ],
 
     "components": {
         "securitySchemes": {
-            "BearerAuth": {
+            "basicAuth": {
                 "type": "http",
                 "scheme": "basic"
             }
@@ -107,11 +115,6 @@
         "/noti_selec": {
             "__comentario__": "COMENTARIO: Cuerpo para describir un endpoint",
             "post": {
-                "security": [
-                    {
-                        "basicAuth": []
-                    }
-                ],
                 "tags": [""],
                 "summary": "Resumen de la operación POST para /not_selec",
                 "requestBody": {
@@ -148,13 +151,51 @@
                                 "schema": {
                                     "type": "object",
                                     "properties": {
-                                        "base64_encoded_file": {
-                                            "type": "string",
-                                            "description": "Excel en formato base64"
-                                        },
-                                        "success": {
-                                            "type": "boolean",
-                                            "description": "Indica si la solicitud fue exitosa"
+
+                                        "detalle": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "contador_reenvios": {
+                                                        "type": "string"
+                                                    },
+                                                    "detalle": {
+                                                        "type": "string"
+                                                    },
+                                                    "fecha_actualizada": {
+                                                        "type": "string",
+                                                        "format": "date",
+                                                        "description": "Fecha en formatoYYYY-MM-DD"
+                                                    },
+                                                    "fecha_generada": {
+                                                        "type": "string",
+                                                        "format": "date",
+                                                        "description": "Fecha en formato YYYY-MM-DD"
+                                                    },
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "id_usuario": {
+                                                        "type": "number"
+                                                    },
+                                                    "identificador_tipo": {
+                                                        "type": "string"
+                                                    },
+                                                    "imei_vehiculo": {
+                                                        "type": "integer"
+                                                    },
+                                                    "leida": {
+                                                        "type": "number"
+                                                    },
+                                                    "oculta": {
+                                                        "type": "string"
+                                                    },
+                                                    "tipo": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
