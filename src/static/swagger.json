@@ -248,6 +248,25 @@
                     }
                 },
                 "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mensaje": {
+                                            "type": "string",
+                                            "description": "Notificaciones marcadas como leidas"
+                                        }
+                                    },
+                                    "example": {
+                                        "mensaje": "Notificaciones marcadas como leidas"
+                                    }
+                                }
+                            }
+                        }
+                    },
                     "202": {
                         "description": "OK",
                         "content": {

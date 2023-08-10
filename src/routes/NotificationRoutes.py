@@ -304,7 +304,7 @@ def notiSelec():
 def notiRead():
     try:
         data = request.get_json()
-        NotificationService.uploadNotiRead(data['id'])
+        NotificationService.uploadNotiRead(data['id_usuario'])
         return jsonify({'mensaje': "Notificaciones marcadas como leidas"})
     except Exception as ex:
         Logger.add_to_log("error", str(ex))
