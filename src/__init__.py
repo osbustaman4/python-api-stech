@@ -1,6 +1,7 @@
 from decouple import config as config_environment
 
 from flask import Flask
+from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from flask_swagger_ui import get_swaggerui_blueprint
 
@@ -10,6 +11,9 @@ app = Flask(__name__)
 
 app.config['JWT_SECRET_KEY'] = config_environment('JWT_SECRET_KEY')
 jwt = JWTManager(app)
+
+if config_environment('CORS') == 'cors':
+    CORS(app, origins=['http://139.144.171.68/'], methods=['GET', 'POST'], allow_headers=['Content-Type', 'Authorization'])
 
 # swagger configs
 SWAGGER_URL = '/swagger'
