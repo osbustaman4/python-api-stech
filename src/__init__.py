@@ -8,12 +8,6 @@ from src.routes import AuthRoutes, NotificationRoutes
 
 app = Flask(__name__)
 
-app.config['JWT_SECRET_KEY'] = config_environment('JWT_SECRET_KEY')
-jwt = JWTManager(app)
-
-if config_environment('CORS') == 'cors':
-    CORS(app, origins=[config_environment('HOST_API')], methods=['GET', 'POST'], allow_headers=['Content-Type', 'Authorization'])
-
 # swagger configs
 SWAGGER_URL = '/swagger'
 #API_URL = '/static/openapi.json'

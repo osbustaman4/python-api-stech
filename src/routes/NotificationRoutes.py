@@ -190,9 +190,27 @@ def geoSelect():
 
 @main_geoInsert.route('/', methods=['POST'])
 def geoInsert():
+    """
+    {
+        "usuario": 1,
+        "imei": "867060037404320",
+        "vertices": "-33.413863,-70.841852",
+        "patente": "TX7250"
+    }
+    """
     try:
         data = request.get_json()
         objects = NotificationService.geoInsert(data)
+
+        if objects[0][0] == "error":
+            raise HTTP404Error("HTTP 404 - No se encontro dato para mostrar")
+        else:
+            response = {
+                    "mensaje": f"exito para sp",
+                    "detalle": objects[0][0],
+                    "success": True
+                }
+            return jsonify(response)
 
     except Exception as ex:
         Logger.add_to_log("error", str(ex))
@@ -203,6 +221,12 @@ def geoInsert():
 
 @main_motorCut.route('/', methods=['POST'])
 def motorCut():
+    """
+    {
+        "imei": "864606042361328",
+        "comando": "motor"
+    }
+    """
     try:
         data = request.get_json()
         objects = NotificationService.motorCut(data)
@@ -258,6 +282,14 @@ def carSelect():
 
 @main_carHistory.route('/', methods=['POST'])
 def carHistory():
+
+    """
+    {
+        "id_usuario": 1,
+        "fecha": "2019-08-09",
+        "imei": 356028083510025
+    }
+    """
     try:
         data = request.get_json()
         queryProp = NotificationService.gsUserOjects(data)
@@ -284,21 +316,7 @@ def carHistory():
         response = jsonify(
             {'message': "Internal Server Error", 'success': False})
         return response, 500
-
-
-@main_notiSelec.route('/', methods=['POST'])
-def notiSelec():
-    try:
-        data = request.get_json()
-        result = NotificationService.getAllNotificationUser(data['id_usuario'])
-        return jsonify({'mensaje': "notificaciones", 'detalle': result})
-    except Exception as ex:
-        Logger.add_to_log("error", str(ex))
-        Logger.add_to_log("error", traceback.format_exc())
-        response = jsonify(
-            {'message': "Internal Server Error", 'success': False})
-        return response, 500
-
+    
 
 @main_notiRead.route('/', methods=['POST'])
 def notiRead():
@@ -311,4 +329,18 @@ def notiRead():
         Logger.add_to_log("error", traceback.format_exc())
         response = jsonify({'message': "Internal Server Error",
                             'success': False, "error": str(ex)})
+        return response, 500
+    
+    
+@main_notiSelec.route('/', methods=['POST'])
+def notiSelec():
+    try:
+        data = request.get_json()
+        result = NotificationService.getAllNotificationUser(data['id_usuario'])
+        return jsonify({'mensaje': "notificaciones", 'detalle': result})
+    except Exception as ex:
+        Logger.add_to_log("error", str(ex))
+        Logger.add_to_log("error", traceback.format_exc())
+        response = jsonify(
+            {'message': "Internal Server Error", 'success': False})
         return response, 500

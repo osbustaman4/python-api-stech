@@ -270,3 +270,27 @@ KeyError: 'username'
                                        ~~~~^^^^^^
 KeyError: 'id'
 
+2023-08-22 00:58:19 | ERROR | (2006, "MySQL server has gone away (ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))")
+2023-08-22 00:58:19 | ERROR | Traceback (most recent call last):
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\python-api-stech\src\services\NotificationServices.py", line 380, in uploadNotiRead
+    cursor.execute(f"""
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 548, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "c:\apps\python-api-stech\env\Lib\site-packages\pymysql\connections.py", line 763, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))")
+
